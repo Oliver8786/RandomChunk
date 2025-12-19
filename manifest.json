@@ -1,0 +1,26 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Chunk Filler Add-On",
+    "description": "Fills each chunk with a random block (top Y=0 to 99)",
+    "uuid": "ccf3aecc-3e46-450a-89f6-8a9b82162a87",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "uuid": "e540019b-2467-4db2-9bc3-cbc7fa01fdd3",
+      "version": [1, 0, 0],
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "description": "Server-side chunk filler script"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.3.0"
+    }
+  ]
+}
